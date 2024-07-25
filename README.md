@@ -1,2 +1,2 @@
 # mtm6201-final
-Final proyect for Web Development II
+Final project for Web Development II
