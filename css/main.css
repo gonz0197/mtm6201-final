@@ -1,0 +1,144 @@
+/* Roboto font starts */
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* ends */
+
+
+.blue {
+    color: #2F3337;
+}
+
+.green {
+    color: #659D0A;
+}
+
+.pink {
+    color: #E83274;
+}
+
+.lightpink {
+    color: #D6A5A6;
+}
+
+.logo {
+    width: 72px;
+}
+
+.paw {
+    width: 25px;
+}
+
+#hero {
+    background-color: pink;
+    background-image: url(../images/Background-m.png);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.d-flex {
+    height: 91vh;
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1100px) {
+    h1 {
+        font-family: "Roboto", sans-serif;
+        font-size: 3.75rem;
+    }
+
+    .text-hero {
+        max-width: 650px;
+    }
+
+    .logo {
+        width: 72px;
+    }
+    
+    .paw {
+        width: 25px;
+    }
+    
+    #hero {
+        background-color: pink;
+        background-image: url(../images/Background.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .d-flex {
+        height: 70vh;
+    }
+}
+
