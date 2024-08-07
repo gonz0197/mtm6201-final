@@ -6,33 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Final Project Web Dev II</title>
 
+    <!-- Link to Google Fonts with preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- Link to main CSS and Bootstrap CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <!-- nav links -->
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Header with navigation links -->
     <header>
         <nav class="navbar navbar-expand-md bg-body-tertiary">
             <div class="container">
-                <!-- we can modify this and add the logo or name of the company -->
-                <a class="navbar-brand" href="index.html"><img src="images/logo_CC.png" alt="Logo Cocker & Co"
-                        class="logo"></a>
+                <!-- Company logo with alt text -->
+                <a class="navbar-brand" href="index.html"><img src="images/logo_CC.png" alt="Logo Cocker & Co" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- margin start auto changed to the right -->
+                    <!-- Navigation links with aria-current attribute -->
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="ourplace.html">Our Place</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Our Place</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pack.html">Meet the Pack</a>
@@ -46,21 +52,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Features</a>
                         </li>
-                        <!-- <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li> -->
                     </ul>
                 </div>
-                <a class="navbar-brand" href="index.html"><img src="images/logo_paw.png" alt="Logo Paw Cocker & Co"
-                        class="paw"></a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <!-- hero block -->
+    <main id="main-content">
+        <!-- Hero section with accessible text and button -->
         <section id="hero" class="shadow-sm">
-            <div class="container-lg ">
+            <div class="container-lg">
                 <div class="d-flex justify-content-left align-items-center">
                     <div class="text-white text-hero">
                         <h1>The perfect hunters for your solutions</h1>
@@ -71,79 +72,221 @@
             </div>
         </section>
 
-        <!-- white block -->
-        <section id="services" class="py-5">
-            <div class="container">
-                <div class="d-flex justify-content-center text-center">
-                    <h3>Don't paws your progress any longer</h3>
+        <!-- Features section with accessible images and text -->
+        <section class="features">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <h2>Don't paws your progress any longer</h2>
                 </div>
-
-
-                    <div class="paw-text">
-                        <div class="paw-dev">
-                            <div class="">
-                                <img src="images/pink_paw.png" alt="">
-                                <p>Web Development</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                
+              </div>
+              <div class="row mt-4">
+                <div class="col-sm-12 d-inline-flex justify-content-center flex-wrap">
+                 <div class="paw-item">
+                  <img src="images/paw.svg" alt="Paw icon">
+                  <h5 class="m-0">Web Development</h5>
+                 </div>
+                 <div class="paw-item">
+                  <img src="images/paw.svg" alt="Paw icon">
+                  <h5 class="m-0">E-commerce</h5>
+                 </div>
+                 <div class="paw-item">
+                  <img src="images/paw.svg" alt="Paw icon">
+                  <h5 class="m-0">SEO</h5>
+                 </div>
+                 <div class="paw-item">
+                  <img src="images/paw.svg" alt="Paw icon">
+                  <h5 class="m-0">Digital Marketing</h5>
+                 </div>
+                 <div class="paw-item">
+                  <img src="images/paw.svg" alt="Paw icon">
+                  <h5 class="m-0">Support</h5>
+                 </div>
+                </div>
+              </div>
             </div>
-            
         </section>
 
-        <section>
-            <div class="container text-center mt-5">
-              
+        <!-- Advantages section with accessible images and text -->
+        <section class="adventages">
+            <div class="container text-center">
               <div class="row">
-                <div class="col-6 col-md-2">
-                  <div class="col-content align-items-center">
-                    <img src="images/pink_paw.png" alt="Paw Icon" class="paw-icon">
-                    <p>Web Development</p>
+                <div class="col-sm-12 col-md-12 col-lg-7 text-start align-self-center">
+                  <h2 class="text-c-pink">Ready to Unleash Your Online Potential?</h2>
+                  <h3 class="text-light">Unleash Your Project</h3>
+                  <p class="text-light">At Cocker & Co, we’re all about creating paw-some digital experiences that leave a lasting impression. Whether you need a stunning website, an e-commerce platform, or digital marketing solutions, our team (with a little help from our furry CEO) is here to help.</p>
+                  <button type="button" class="btn btn-info text-light">Book a Paw-sultation</button>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-5">
+                  <img src="images/img1.png" alt="Team working on a project" class="img1">
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Data line section with accessible images and text -->
+        <section class="data-line">
+            <img src="images/vector.svg" alt="Decorative line" class="line-vector">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <h3>Here’s why we’re the top dog in web development:</h3>
+                </div>
+              </div>
+
+              <div class="row row-data-line mt-5">
+                <div class="col-sm-12 col-md-12 col-lg-4 align-self-end item-strengths">
+                  <div class="i-image">
+                    <img src="images/thumb2.png" alt="Expert team">
+                  </div>
+                  <div class="i-desc">
+                    <div class="col">
+                      <h5>Tail-Wagging Expertise</h5>
+                      <p>Our team combines years of experience in web development with a passion for innovation. We're always up-to-date with the latest trends and technologies to deliver top-notch solutions.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-6 col-md-2">
-                  <div class="col-content align-items-center">
-                    <img src="images/pink_paw.png" alt="Paw Icon" class="paw-icon">
-                    <p>E-commerce</p>
+
+                <div class="col-sm-12 col-md-12 col-lg-4 align-self-center item-strengths">
+                  <div class="i-image">
+                    <img src="images/thumb2.png" alt="Excellent support">
+                  </div>
+                  <div class="i-desc">
+                    <div class="col">
+                      <h5>Bark-worthy Support</h5>
+                      <p>Our commitment to you doesn't end with the launch of your website. We offer ongoing support and maintenance to keep your site running smoothly, so you can focus on growing your business.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="w-100 d-block d-md-none"></div>
-                <div class="col-4 col-md-2">
-                  <div class="col-content align-items-center">
-                    <img src="images/pink_paw.png" alt="Paw Icon" class="paw-icon">
-                    <p>SEO</p>
+
+                <div class="col-sm-12 col-md-12 col-lg-4 align-self-start item-strengths">
+                  <div class="i-image">
+                    <img src="images/thumb2.png" alt="Custom solutions">
                   </div>
-                </div>
-                <div class="col-4 col-md-2">
-                  <div class="col-content align-items-center">
-                    <img src="images/pink_paw.png" alt="Paw Icon" class="paw-icon">
-                    <p>Digital Marketing</p>
-                  </div>
-                </div>
-                <div class="col-4 col-md-2">
-                  <div class="col-content align-items-center">
-                    <img src="images/pink_paw.png" alt="Paw Icon" class="paw-icon">
-                    <p>Support</p>
+                  <div class="i-desc">
+                    <div class="col">
+                      <h5>Paw-some Customization</h5>
+                      <p>Every project we take on is unique, just like your business. We provide personalized solutions tailored to your specific needs, ensuring your website stands out from the pack.</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+        </section>
 
+        <!-- Testimonial section with accessible images and text -->
+        <section class="testimonial">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <h3>Tail-Wagging Testimonials</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 d-inline-flex justify-content-center card-row">
 
+                  <div class="card card-testimonial rounded-4 shadow col-12 col-md-4">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <img src="images/user_thimb.png" class="rounded float-start" alt="Emily Collins">
+                          <h5 class="card-title text-white">Emily Collins</h5>
+                          <h6 class="card-subtitle text-body-secondary text-white">COO of Tech Innovators Inc.</h6>
+                        </div>
+                      </div>
+                      <p class="card-text text-white">The ongoing support from Cocker & Co has been invaluable. We feel confident knowing Mateo and the team are always there to help with any issues that arise.</p>
+                    </div>
+                  </div>
 
+                  <div class="card card-testimonial rounded-4 shadow col-12 col-md-4">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <img src="images/user_thimb.png" class="rounded float-start" alt="John Davis">
+                          <h5 class="card-title text-white">John Davis</h5>
+                          <h6 class="card-subtitle text-body-secondary text-white">Owner of Urban Gardeners Co.</h6>
+                        </div>
+                      </div>
+                      <p class="card-text text-white">From the first consultation to the final launch, Cocker & Co made the process seamless and enjoyable, thanks in no small part to the charming leadership of Mateo. Their expertise truly sets them apart.</p>
+                    </div>
+                  </div>
 
+                  <div class="card card-testimonial rounded-4 shadow col-12 col-md-4">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <img src="images/user_thimb.png" class="rounded float-start" alt="Lisa Martinez">
+                          <h5 class="card-title text-white">Lisa Martinez</h5>
+                          <h6 class="card-subtitle text-body-secondary text-white">Marketing Director of Green Leaf Organics</h6>
+                        </div>
+                      </div>
+                      <p class="card-text text-white">Cocker & Co's personalized approach and creative solutions, with Mateo leading the charge, were exactly what we needed. Our new website has received rave reviews!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
 
-
+        <!-- Footer with accessible links and images -->
+        <footer class="bg-primary-gray text-white text-center text-lg-start">
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <img src="images/Imagotype_footer.svg" alt="Cocker & Co logo">       
+                <p class="mt-4">
+                  <small>
+                    Don't paws your progress any longer—contact us today and let's create something amazing together!
+                  </small>
+                </p>
+              </div>
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5>Company</h5>
+                <ul class="list-unstyled mb-0 mt-3">
+                  <li>
+                    <a href="#" class="text-white text-decoration-none">Meet the Pack</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="#" class="text-white text-decoration-none">Our Place</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="#" class="text-white text-decoration-none">Fetch Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5>Resources</h5>
+                <ul class="list-unstyled mb-0 mt-3">
+                  <li class="mt-2">
+                    <a href="#!" class="text-white text-decoration-none">Terms of Service</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="#!" class="text-white text-decoration-none">Privacy Policy</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="#!" class="text-white text-decoration-none">Manage Cookies</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0 offset-md-3">
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled mt-3">
+                  <li class="footer-icon">
+                    <i class="bi bi-facebook" aria-label="Facebook"></i>
+                    <i class="bi bi-instagram" aria-label="Instagram"></i>
+                    <i class="bi bi-linkedin" aria-label="LinkedIn"></i>
+                    <i class="bi bi-twitter-x" aria-label="Twitter"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
     </main>
 
-
-
+    <!-- JavaScript for Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
